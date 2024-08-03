@@ -11,6 +11,8 @@ class LoginController: UIViewController {
     
     // MARK: - Properties
     
+    private var viewModel = LoginViewModel()
+    
     private let iconImage : UIImageView = {
         let iv = UIImageView()
         iv.contentMode = .scaleAspectFill
@@ -22,13 +24,13 @@ class LoginController: UIViewController {
     private let emailTextField : UITextField = {
         let tf = CustomTextField(placeholder: "Email")
         tf.keyboardType = .emailAddress
-        
         return tf
     }()
     
     private let passwordTextField : UITextField = {
        let tf = CustomTextField(placeholder: "Password")
         tf.isSecureTextEntry = true
+        tf.textContentType = .oneTimeCode
         return tf
     }()
     
@@ -37,9 +39,10 @@ class LoginController: UIViewController {
         button.setTitle("Log In", for: .normal)
         button.setHeight(50)
         button.setTitleColor(.white, for: .normal)
-        button.backgroundColor = .systemIndigo
+        button.backgroundColor = .systemIndigo.withAlphaComponent(0.3)
         button.layer.cornerRadius = 5
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 15)
+        button.isEnabled = false
         return button
     }()
     
@@ -61,6 +64,7 @@ class LoginController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
+        configureNotificationObservers()
         
         
     }
@@ -69,6 +73,18 @@ class LoginController: UIViewController {
     @objc func handleShowSignUp() {
         let controller = RegistrationController()
         navigationController?.pushViewController(controller, animated: true)
+    }
+    
+    @objc func textDidChange(sender: UITextField) {
+        if sender == emailTextField {
+            viewModel.email = sender.text
+        } else {
+            viewModel.password = sender.text
+        }
+        
+        loginButton.backgroundColor = viewModel.buttonBackgroundColor
+        loginButton.setTitleColor(viewModel.buttonTitleColor, for: .normal)
+        loginButton.isEnabled = viewModel.formIsValid
     }
     
     
@@ -98,5 +114,12 @@ class LoginController: UIViewController {
         view.addSubview(dontHaveAccountButton)
         dontHaveAccountButton.centerX(inView: view)
         dontHaveAccountButton.anchor(bottom: view.safeAreaLayoutGuide.bottomAnchor)
+    }
+    
+    
+    func configureNotificationObservers() {
+        emailTextField.addTarget(self, action: #selector(textDidChange), for: .editingChanged)
+        passwordTextField.addTarget(self, action: #selector(textDidChange), for: .editingChanged)
+
     }
 }

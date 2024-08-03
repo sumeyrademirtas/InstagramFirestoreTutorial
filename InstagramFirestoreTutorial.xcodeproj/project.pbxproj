@@ -25,6 +25,7 @@
 		815320AD2C5D420D005BA1EE /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815320AC2C5D420D005BA1EE /* LoginController.swift */; };
 		815320AF2C5D4217005BA1EE /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815320AE2C5D4217005BA1EE /* RegistrationController.swift */; };
 		815320B12C5E18DD005BA1EE /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815320B02C5E18DD005BA1EE /* CustomTextField.swift */; };
+		815320B32C5E4CF4005BA1EE /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815320B22C5E4CF4005BA1EE /* AuthenticationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		815320AC2C5D420D005BA1EE /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		815320AE2C5D4217005BA1EE /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		815320B02C5E18DD005BA1EE /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		815320B22C5E4CF4005BA1EE /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 		815320952C5CC55B005BA1EE /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				815320B22C5E4CF4005BA1EE /* AuthenticationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				815320A52C5CFA54005BA1EE /* FeedCell.swift in Sources */,
 				8153209F2C5CC83D005BA1EE /* ImageSelectorController.swift in Sources */,
 				815320A12C5CC847005BA1EE /* NotificationController.swift in Sources */,
+				815320B32C5E4CF4005BA1EE /* AuthenticationViewModel.swift in Sources */,
 				8153209D2C5CC82F005BA1EE /* SearchController.swift in Sources */,
 				8153207F2C5CC4D7005BA1EE /* AppDelegate.swift in Sources */,
 				815320A32C5CC84E005BA1EE /* ProfileController.swift in Sources */,
