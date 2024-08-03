@@ -22,6 +22,8 @@
 		815320A52C5CFA54005BA1EE /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815320A42C5CFA54005BA1EE /* FeedCell.swift */; };
 		815320A72C5CFB8B005BA1EE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815320A62C5CFB8B005BA1EE /* Extensions.swift */; };
 		815320AA2C5CFC30005BA1EE /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 815320A92C5CFC30005BA1EE /* JGProgressHUD */; };
+		815320AD2C5D420D005BA1EE /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815320AC2C5D420D005BA1EE /* LoginController.swift */; };
+		815320AF2C5D4217005BA1EE /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815320AE2C5D4217005BA1EE /* RegistrationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		815320A22C5CC84E005BA1EE /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		815320A42C5CFA54005BA1EE /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		815320A62C5CFB8B005BA1EE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		815320AC2C5D420D005BA1EE /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		815320AE2C5D4217005BA1EE /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,7 @@
 		815320942C5CC55A005BA1EE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				815320AB2C5D41FF005BA1EE /* Authentication */,
 				815320982C5CC5F8005BA1EE /* MainTabController.swift */,
 				8153209A2C5CC822005BA1EE /* FeedController.swift */,
 				8153209C2C5CC82F005BA1EE /* SearchController.swift */,
@@ -139,6 +144,15 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		815320AB2C5D41FF005BA1EE /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				815320AC2C5D420D005BA1EE /* LoginController.swift */,
+				815320AE2C5D4217005BA1EE /* RegistrationController.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				815320832C5CC4D7005BA1EE /* ViewController.swift in Sources */,
+				815320AD2C5D420D005BA1EE /* LoginController.swift in Sources */,
 				815320A52C5CFA54005BA1EE /* FeedCell.swift in Sources */,
 				8153209F2C5CC83D005BA1EE /* ImageSelectorController.swift in Sources */,
 				815320A12C5CC847005BA1EE /* NotificationController.swift in Sources */,
@@ -229,6 +244,7 @@
 				815320992C5CC5F8005BA1EE /* MainTabController.swift in Sources */,
 				815320A72C5CFB8B005BA1EE /* Extensions.swift in Sources */,
 				815320812C5CC4D7005BA1EE /* SceneDelegate.swift in Sources */,
+				815320AF2C5D4217005BA1EE /* RegistrationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
