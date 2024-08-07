@@ -25,6 +25,7 @@
 		815320AF2C5D4217005BA1EE /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815320AE2C5D4217005BA1EE /* RegistrationController.swift */; };
 		815320B12C5E18DD005BA1EE /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815320B02C5E18DD005BA1EE /* CustomTextField.swift */; };
 		815320B32C5E4CF4005BA1EE /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815320B22C5E4CF4005BA1EE /* AuthenticationViewModel.swift */; };
+		81C58FB52C634E9E0079B052 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81C58FB42C634E9E0079B052 /* GoogleService-Info.plist */; };
 		81DB1FB42C60A060001E51C9 /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 81DB1FB32C60A060001E51C9 /* JGProgressHUD */; };
 		81DB1FB72C60A287001E51C9 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 81DB1FB62C60A287001E51C9 /* FirebaseAuth */; };
 		81DB1FB92C60A287001E51C9 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 81DB1FB82C60A287001E51C9 /* FirebaseAuthCombine-Community */; };
@@ -39,7 +40,6 @@
 		81DB1FCD2C60A775001E51C9 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 81DB1FCC2C60A775001E51C9 /* SDWebImage */; };
 		81DB1FCF2C60A775001E51C9 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 81DB1FCE2C60A775001E51C9 /* SDWebImageMapKit */; };
 		81DB1FD22C60A908001E51C9 /* YPImagePicker in Frameworks */ = {isa = PBXBuildFile; productRef = 81DB1FD12C60A908001E51C9 /* YPImagePicker */; };
-		81DB1FD42C61FA48001E51C9 /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = 81DB1FD32C61FA48001E51C9 /* GoogleService-Info (1).plist */; };
 		81DB1FD62C62042A001E51C9 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DB1FD52C62042A001E51C9 /* ImageUploader.swift */; };
 		81DB1FD82C620437001E51C9 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DB1FD72C620437001E51C9 /* AuthService.swift */; };
 /* End PBXBuildFile section */
@@ -64,8 +64,8 @@
 		815320AE2C5D4217005BA1EE /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		815320B02C5E18DD005BA1EE /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		815320B22C5E4CF4005BA1EE /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		81C58FB42C634E9E0079B052 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		81DB1FB22C609BA7001E51C9 /* InstagramFirestoreTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramFirestoreTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		81DB1FD32C61FA48001E51C9 /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = SOURCE_ROOT; };
 		81DB1FD52C62042A001E51C9 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		81DB1FD72C620437001E51C9 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,7 +119,7 @@
 				815320872C5CC4D8005BA1EE /* Assets.xcassets */,
 				815320892C5CC4D8005BA1EE /* LaunchScreen.storyboard */,
 				8153208C2C5CC4D8005BA1EE /* Info.plist */,
-				81DB1FD32C61FA48001E51C9 /* GoogleService-Info (1).plist */,
+				81C58FB42C634E9E0079B052 /* GoogleService-Info.plist */,
 			);
 			path = InstagramFirestoreTutorial;
 			sourceTree = "<group>";
@@ -270,9 +270,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				815320882C5CC4D8005BA1EE /* Assets.xcassets in Resources */,
+				81C58FB52C634E9E0079B052 /* GoogleService-Info.plist in Resources */,
 				8153208B2C5CC4D8005BA1EE /* Base in Resources */,
 				815320862C5CC4D7005BA1EE /* Base in Resources */,
-				81DB1FD42C61FA48001E51C9 /* GoogleService-Info (1).plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
