@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		81309D082C64BE2F002B3A5F /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81309D072C64BE2F002B3A5F /* UserService.swift */; };
 		81309D0A2C64BE63002B3A5F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81309D092C64BE63002B3A5F /* Constants.swift */; };
+		81309D0C2C64C27F002B3A5F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81309D0B2C64C27F002B3A5F /* User.swift */; };
 		8153207F2C5CC4D7005BA1EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8153207E2C5CC4D7005BA1EE /* AppDelegate.swift */; };
 		815320812C5CC4D7005BA1EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815320802C5CC4D7005BA1EE /* SceneDelegate.swift */; };
 		815320832C5CC4D7005BA1EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815320822C5CC4D7005BA1EE /* ViewController.swift */; };
@@ -51,6 +52,7 @@
 /* Begin PBXFileReference section */
 		81309D072C64BE2F002B3A5F /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		81309D092C64BE63002B3A5F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		81309D0B2C64C27F002B3A5F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8153207E2C5CC4D7005BA1EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		815320802C5CC4D7005BA1EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		815320822C5CC4D7005BA1EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 		815320972C5CC55D005BA1EE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				81309D0B2C64C27F002B3A5F /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				815320B32C5E4CF4005BA1EE /* AuthenticationViewModel.swift in Sources */,
 				8153209D2C5CC82F005BA1EE /* SearchController.swift in Sources */,
 				8153207F2C5CC4D7005BA1EE /* AppDelegate.swift in Sources */,
+				81309D0C2C64C27F002B3A5F /* User.swift in Sources */,
 				815320A32C5CC84E005BA1EE /* ProfileController.swift in Sources */,
 				81309D0A2C64BE63002B3A5F /* Constants.swift in Sources */,
 				8153209B2C5CC822005BA1EE /* FeedController.swift in Sources */,

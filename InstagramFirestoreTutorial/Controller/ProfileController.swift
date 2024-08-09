@@ -15,6 +15,10 @@ class ProfileController: UICollectionViewController {
     
     // MARK: - Properties
     
+    var user: User? {
+        didSet { navigationItem.title = user?.username }
+    }
+    
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
@@ -26,7 +30,9 @@ class ProfileController: UICollectionViewController {
     // MARK: - API
     
     func fetchUser() {
-        UserService.fetchUser()
+        UserService.fetchUser { user in
+            self.user = user
+        }
     }
     
     
