@@ -7,6 +7,7 @@
 
 import FirebaseAuth
 
+
 struct UserService {
     static func fetchUser(completion: @escaping(User) -> Void) {
         guard let uid = Auth.auth().currentUser?.uid else { return }
@@ -16,6 +17,16 @@ struct UserService {
             
             let user = User(dictionary: dictionary)
             completion(user)
+        }
+    }
+    
+    static func fetchUsers(completion: @escaping([User]) -> Void) {
+        var users = [User]()
+        COLLECTION_USERS.getDocuments { (snapshot, error) in
+            guard let snapshot = snapshot else { return }
+
+            let users = snapshot.documents.map({User(dictionary: $0.data())})
+            completion(users)
         }
     }
 }
